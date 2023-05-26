@@ -1,0 +1,138 @@
+* { /*reset de qualquer configuração de estilo, posição, etc */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+section h2,
+section h3,
+form button {
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+}
+
+body, input, textarea {
+    font-family: 'Roboto', sans-serif;
+}
+
+header { /*personlaização do cabeçalho*/
+    padding: 16px 0;
+    background-color: #182c61;
+    color: #ecf0f1;
+}
+
+header nav li { /*personalização da posição links p/ abas */
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav a { /*personalização da cor links p/ abas */
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.container { /* personalização de qualquer tag que está com a classe container*/
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container, /*personalização da tag que está com a classe container e dentro da header*/
+section .container {  /*personalização da desc. e imgs que está com a classe brands-list*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brands-list img { /*personalizaçã das imagens da lista*/ 
+    height: 24px;
+}
+
+.brands-list li { /*personalização da posição das imgs da lista*/
+    display: inline;
+    margin-right: 8px;
+}
+
+section .container { /*sobrescrição do align-items: center feito acima "cascata"*/
+    align-items: flex-start;
+}
+
+section { /*ajustando espaçamento*/
+    padding: 24px 0;
+}
+
+section h2 { /*ajustando espaçamento*/
+    margin-bottom: 16px;
+}
+section {
+    color: #182c61;
+}
+
+section p { /*ajustando espaçamento*/
+    margin-bottom: 8px;
+}
+
+.store-front { /*ajustando espaçamento*/
+    margin-right: 32px;
+}
+
+.social-links img { /* redefnindo tamanho das imagens inciais*/
+    height: 24px;
+}
+.social-links li {
+    display: inline-block;
+    margin-right: 8px;
+}
+.social-links li a {
+    text-decoration: none;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color: #182c61;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color:  #4a64ac;
+}
+
+input:focus, textarea:focus {
+    outline-color: #182c61;
+}
+
+footer {
+    background-color: #182c61;
+    color: #ecf0f1;
+    padding: 16px 0;
+}
